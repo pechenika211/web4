@@ -1,0 +1,52 @@
+/* =========================================================
+   ЗАДАНИЕ 4. Bootstrap 5 (Mobile First).
+   Сетка, адаптивность и отступы (margin/padding) заданы
+   классами Bootstrap в index.html. Здесь — только оформление
+   (цвета и мелкие уточнения), которых нет во фреймворке.
+   ========================================================= */
+
+body {
+    color: #222;
+}
+
+.header,
+.footer {
+    background-color: #4a7ab5;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #fff;
+    text-decoration: underline;
+}
+
+#logo {
+    width: 64px;
+    height: 64px;
+}
+
+.table thead th {
+    background-color: #4a7ab5;
+    color: #fff;
+}
+
+.btn-primary {
+    --bs-btn-bg: #4a7ab5;
+    --bs-btn-border-color: #4a7ab5;
+    --bs-btn-hover-bg: #3a6290;
+    --bs-btn-hover-border-color: #3a6290;
+    --bs-btn-active-bg: #3a6290;
+    --bs-btn-active-border-color: #3a6290;
+}
+
+/* Кнопка на всю ширину на смартфоне, по содержимому — от 768px */
+@media (min-width: 768px) {
+    #logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .w-md-auto {
+        width: auto !important;
+    }
+}
